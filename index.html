@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo Editor</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="editor">
+      <div class="toolbar">
+        <div class="toolbar-item">
+          <label class="tool-label" for="file"> </label>
+          <input class="tool-input" type="file" id="fileInput" />
+        </div>
+        <div class="toolbar-item">
+          <label class="tool-label" for="brightness">Brightness</label>
+          <input
+            class="tool-input"
+            type="range"
+            id="brightnessInput"
+            min="0"
+            max="200"
+          />
+        </div>
+        <div class="toolbar-item">
+          <label class="tool-label" for="saturation">Saturation</label>
+          <input
+            class="tool-input"
+            type="range"
+            id="saturationInput"
+            min="0"
+            max="200"
+          />
+        </div>
+        <div class="toolbar-item">
+          <label class="tool-label" for="blur">Blur</label>
+          <input
+            class="tool-input"
+            type="range"
+            id="blurInput"
+            min="0"
+            max="25"
+          />
+        </div>
+        <div class="toolbar-item">
+          <label class="tool-label" for="brightness">Inversion</label>
+          <input
+            class="tool-input"
+            type="range"
+            id="inversionInput"
+            min="0"
+            max="100"
+          />
+        </div>
+      </div>
+      <div class="image-area">
+        <canvas id="canvas" height="500px" width="500px"></canvas>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

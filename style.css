@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.editor {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.toolbar {
+  width: 30%;
+  background: lightgrey;
+}
+
+.toolbar-item {
+  padding: 1rem;
+}
+.tool-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.tool-input {
+  width: 100%;
+}
+
+.image-area {
+  /* flex grow makes sure that image area takes up the remaining available space */
+  flex-grow: 1;
+  background: rgb(252, 255, 252);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+#canvas {
+  /* the image selected might be of large resolution, we need to restrict our canvas to be browser's viewing area */
+  max-width: 100%;
+  max-height: 100%;
+}
